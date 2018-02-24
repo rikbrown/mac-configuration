@@ -37,9 +37,6 @@ echo "Setting up Homebrew"
 # Install brews
 brew bundle
 
-# App store
-mas lucky BetterSnapTool
-
 # Fish 
 sudo sh -c "echo /usr/local/bin/fish >> /etc/shells"
 chsh -s /usr/local/bin/fish

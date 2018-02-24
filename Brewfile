@@ -17,6 +17,7 @@ cask "spotify"
 cask "sublime-text"
 cask "transmission"
 mas "BetterSnapTool", id: 417375580
+mas "Boxy", id: 1053031090
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
