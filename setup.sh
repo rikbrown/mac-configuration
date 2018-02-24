@@ -8,9 +8,9 @@ alias bci="brew cask install"
 sudo echo "Welcome to setup!" # cache sudo
 
 #
-# Defaults
+# Config
 #
-echo "Configuring defaults"
+echo "Configuring system"
 
 # Keyboard
 dwg NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -19,6 +19,7 @@ dwg NSAutomaticSpellingCorrectionEnabled -bool false
 dwg NSAutomaticCapitalizationEnabled -bool false
 dwg NSAutomaticPeriodSubstitutionEnabled -bool false
 dwg NSPreferredSpellServerLanguage "en_GB"
+dwg AppleKeyboardUIMode -int 3
 
 # Mouse
 dwg com.apple.mouse.scaling 4
@@ -27,8 +28,37 @@ dwg MouseButtonMode "TwoButton"
 dwg MouseTwoFingerHorizSwipeGesture 2
 dwg MouseButtonDivision 55
 
-# Disable disk image verify
+# Finder
+dw com.apple.finder NewWindowTarget -string "PfHm" # New window default location to ~
 dw com.apple.frameworks.diskimages skip-verify true
+dw com.apple.LaunchServices LSQuarantine -bool false # No "Are you sure you want to open?" msg
+dwg NSTableViewDefaultSizeMode -int 1 # smaller sidebar icons
+dw com.apple.finder ShowStatusBar -bool true
+dw com.apple.finder ShowPathbar -bool true
+dw com.apple.finder QLEnableTextSelection -bool true # text selection in quicklook
+dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
+# default view mode to grid for desktop and list elsewhere
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy list" ~/Library/Preferences/com.apple.finder.plist
+chflags nohidden ~/Library # show ~/Library
+
+# Dock
+defaults write com.apple.dock tilesize -int 42
+
+# Dialogs
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+
+# Menu
+defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE MMM d  HH:mm'
+
+# Git
+git config --global author.name "Rik Brown"
+git config --global author.email "rik@rik.codes"
+
+#
+# Apps
+#
 
 # Homebrew setup
 echo "Setting up Homebrew"
@@ -37,17 +67,34 @@ echo "Setting up Homebrew"
 # Install brews
 brew bundle
 
-# Fish 
+#
+# Terminal
+#
+
+# Set Fish as shell
 sudo sh -c "echo /usr/local/bin/fish >> /etc/shells"
 chsh -s /usr/local/bin/fish
+
+#
+# Post-apps config
+#
+
+echo "Configuring apps"
+
+defaults write com.apple.TextEdit RichText -int 0 # default to plain text
+
+#
+# Cleanup
+#
+
+# Reset finder
+killall Finder
+killall Dock
+killall SystemUIServer
 
 # Dark mode
 dark-mode off 
 dark-mode on
-
-# Git
-git config --global author.name "Rik Brown"
-git config --global author.email "rik@rik.codes"
 
 # Open relevant installed apps
 open "/Applications/Alfred 3.app"
