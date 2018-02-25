@@ -41,14 +41,17 @@ dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
 chflags nohidden ~/Library # show ~/Library
 
 # Dock
-defaults write com.apple.dock tilesize -int 32
+dw com.apple.dock tilesize -int 32
+
+# Mission Control
+dw com.apple.dock mru-spaces -bool false # don't automatically rearrange spaces
 
 # Dialogs
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+dwg NSNavPanelExpandedStateForSaveMode -bool true
+dwg PMPrintingExpandedStateForPrint -bool true
 
 # Menu
-defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE MMM d  HH:mm'
+dw com.apple.menuextra.clock 'DateFormat' -string 'EEE MMM d  HH:mm'
 
 # Git
 git config --global author.name "Rik Brown"
@@ -66,6 +69,7 @@ echo "Setting up Homebrew"
 [ ! -e /usr/local/bin/brew ] && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install brews
+echo "Unbundling brews!"
 brew bundle
 
 #
@@ -73,6 +77,7 @@ brew bundle
 #
 
 # Set Fish as shell
+echo "Setting Fish as shell"
 sudo sh -c "echo /usr/local/bin/fish >> /etc/shells"
 chsh -s /usr/local/bin/fish
 
@@ -81,23 +86,29 @@ chsh -s /usr/local/bin/fish
 #
 
 echo "Configuring apps"
-
 defaults write com.apple.TextEdit RichText -int 0 # default to plain text
 
 #
 # Cleanup
 #
 
+echo "Cleaning up"
+
 # Reset finder
+echo "Killing your favourite processes"
 killall Finder
 killall Dock
 killall SystemUIServer
 
 # Dark mode
+echo "Let's get dark"
 dark-mode off 
 dark-mode on
 
-# Open relevant installed apps
+# 
+# Open relevant installed apps so we can do things with them
+#
+echo "Opening apps"
 open "/Applications/Alfred 3.app"
 open /Applications/BetterSnapTool.app
 open /Applications/Dropbox.app
