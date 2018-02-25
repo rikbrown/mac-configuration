@@ -2,8 +2,6 @@
 
 alias dw="defaults write"
 alias dwg="defaults write -g"
-alias bi="brew install"
-alias bci="brew cask install"
 
 sudo echo "Welcome to setup!" # cache sudo
 
@@ -22,7 +20,7 @@ dwg NSPreferredSpellServerLanguage "en_GB"
 dwg AppleKeyboardUIMode -int 3
 
 # Mouse
-dwg com.apple.mouse.scaling 4
+dwg com.apple.mouse.scaling 5
 dwg AppleEnableMouseSwipeNavigateWithScrolls -bool true
 dwg MouseButtonMode "TwoButton"
 dwg MouseTwoFingerHorizSwipeGesture 2
@@ -43,7 +41,7 @@ dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
 chflags nohidden ~/Library # show ~/Library
 
 # Dock
-defaults write com.apple.dock tilesize -int 42
+defaults write com.apple.dock tilesize -int 32
 
 # Dialogs
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -55,6 +53,9 @@ defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE MMM d  HH:mm'
 # Git
 git config --global author.name "Rik Brown"
 git config --global author.email "rik@rik.codes"
+
+# Power management
+sudo pmset autorestart 1
 
 #
 # Apps
