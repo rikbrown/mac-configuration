@@ -6,6 +6,18 @@ alias dwg="defaults write -g"
 sudo echo "Welcome to setup!" # cache sudo
 
 #
+# Apps
+#
+
+# Homebrew setup
+echo "Setting up Homebrew"
+[ ! -e /usr/local/bin/brew ] && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install brews
+echo "Unbundling brews!"
+brew bundle
+
+#
 # Config
 #
 echo "Configuring system"
@@ -60,17 +72,6 @@ git config --global author.email "rik@rik.codes"
 # Power management
 sudo pmset autorestart 1
 
-#
-# Apps
-#
-
-# Homebrew setup
-echo "Setting up Homebrew"
-[ ! -e /usr/local/bin/brew ] && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Install brews
-echo "Unbundling brews!"
-brew bundle
 
 #
 # Terminal
