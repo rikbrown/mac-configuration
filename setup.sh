@@ -52,7 +52,8 @@ dw com.apple.desktopservices DSDontWriteNetworkStores -bool true
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy list" ~/Library/Preferences/com.apple.finder.plist
 chflags nohidden ~/Library # show ~/Library
 
-# Dock
+# Dock and desktop
+dw com.apple.finder CreateDesktop false; # no desktop icons
 dw com.apple.dock tilesize -int 32
 
 # Mission Control
@@ -71,7 +72,6 @@ git config --global author.email "rik@rik.codes"
 
 # Power management
 sudo pmset autorestart 1
-
 
 #
 # Terminal
