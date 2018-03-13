@@ -92,7 +92,7 @@ dwg PMPrintingExpandedStateForPrint2 -bool true
 dwg NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Locale
-dw com.apple.menuextra.clock 'DateFormat' -string 'EEE MMM d  HH:mm'
+dw com.apple.menuextra.clock 'DateFormat' -string 'EEE d  HH:mm'
 dwg AppleTemperatureUnit -string "Celsius"
 dwg AppleMeasurementUnits -string "Centimeters"
 dwg AppleMetricUnits -bool true
