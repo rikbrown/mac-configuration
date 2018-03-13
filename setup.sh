@@ -150,7 +150,6 @@ killall Finder
 killall Dock
 killall SystemUIServer
 
-
 # 
 # Open relevant installed apps so we can do things with them
 #
@@ -159,4 +158,5 @@ if [ ! $IS_SETUP ]; then
 	open "/Applications/Alfred 3.app"
 	open /Applications/BetterSnapTool.app
 	open /Applications/Dropbox.app
+	open "/Applications/Backup and Sync.app"
 fi
