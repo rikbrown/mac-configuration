@@ -23,6 +23,7 @@ cask "transmission"
 cask "caskroom/drivers/logitech-options"
 mas "BetterSnapTool", id: 417375580
 mas "Boxy", id: 1053031090
+mas "Chatty", id: 981117463
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
