@@ -8,19 +8,15 @@ USER=$(whoami)
 # Initial prep
 #
 
-echo "Getting ready"
-
-if [ ! $IS_SETUP ]; then
-	# New setup - wipe dock
-	dw com.apple.dock persistent-apps -array
-fi
-
 # Close any open System Preferences panes
 osascript -e 'tell application "System Preferences" to quit'
 
-sudo -v # cache sudo
+# Get password. We'll use it later for the update script
+echo "Please enter your password:"
+read -s PASSWORD
+sudo -S -v <<< "$PASSWORD" 2>/dev/null
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+# Keep-alive: update existing `sudo` time stamp until we have finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 #
@@ -139,10 +135,31 @@ sudo sh -c "grep -q -F fish /etc/shells || echo /usr/local/bin/fish >> /etc/shel
 sudo chsh -s /usr/local/bin/fish $USER
 
 #
+# Dock
+#
+
+if [ ! $IS_SETUP ]; then
+	# New setup - wipe dock
+	dw com.apple.dock persistent-apps -array
+fi
+
+#
+# Setup auto-updates
+#
+
+mkdir -p ~/bin
+cp upgrade-brews.sh ~/bin
+sed -i '' "s/SECRETPASSWORD/$PASSWORD/g" ~/bin/upgrade-brews.sh
+(crontab -l 2>/dev/null | grep -q MAILTO) || (echo 'MAILTO="rik@rikbrown.co.uk"'; crontab -l 2>/dev/null) | crontab - 
+(crontab -l 2>/dev/null | grep -q upgrade-brews) || (crontab -l 2>/dev/null; echo '30 3 * * * ~/bin/upgrade-brews.sh 2>/dev/null') | crontab -
+sudo pmset repeat wakeorpoweron MTWRFSU 03:29:00
+
+#
 # Cleanup
 #
 
 echo "Cleaning up"
+dw codes.rik.macconfig IsSetup -bool true
 
 # Reset finder
 echo "Killing your favourite processes"

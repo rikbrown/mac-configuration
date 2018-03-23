@@ -1,3 +1,2 @@
 #!/bin/sh
-rm -f Brewfile
-brew bundle dump
+brew bundle dump --force
