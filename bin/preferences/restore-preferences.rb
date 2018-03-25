@@ -9,5 +9,5 @@ include BackupConfig
 # Perform restore
 targets.each do |source, target|
   puts "#{target} -> #{source}" if verbose?
-  FileUtils.cp_r(target, BackupConfig.sanitise_path(source))
+  FileUtils.cp_r(target, File.dirname(BackupConfig.sanitise_path(source)), remove_destination: true)
 end
