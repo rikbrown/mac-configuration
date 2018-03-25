@@ -23,7 +23,7 @@ cd mac-configuration
 brew bundle dump --force
 
 if [ ! -z "$(git diff Brewfile)" ]; then
-    git commit --quiet -m "[sync-brewfile] Update Brewfile" Brewfile
+    git commit --quiet --author "sync-brewfile (robot) <sync-brewfile@$(hostname)>" -m "[sync-brewfile] Update Brewfile" Brewfile
     git push --quiet 2>&1
 fi
 
