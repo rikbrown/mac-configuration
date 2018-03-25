@@ -26,7 +26,8 @@ if [ ! -z "$(git diff Brewfile)" ]; then
 fi
 
 # Backup configuration
-rm -rf ./preferences
+rm -rf ./preferences/*
+mkdir -p preferences
 touch preferences/.gitignore
 ~/bin/mac-configuration/preferences/backup-preferences.rb -l preferences
 if [ ! -z "$(git diff preferences)" ]; then
