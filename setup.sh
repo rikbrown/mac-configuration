@@ -159,6 +159,13 @@ sed -i '' "s/SECRETPASSWORD/$PASSWORD/g" ~/bin/mac-configuration/upgrade-brews.s
 # Wake up to run it at 3:29am
 sudo pmset repeat wakeorpoweron MTWRFSU 03:29:00
 
+# Enable cron logging
+(grep -q cron /etc/syslog.conf) || sudo tee -a /etc/syslog.conf > /dev/null << EOF
+cron.* /var/log/cron.log
+EOF
+sudo launchctl unload /System/Library/LaunchDaemons/com.apple.syslogd.plist
+sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
+
 #
 # Cleanup
 #
