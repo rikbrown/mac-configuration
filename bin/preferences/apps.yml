@@ -1,5 +1,11 @@
+intellij:
+  - ~/Library/Preferences/IntelliJIdea2017.3
+iterm2:
+  - ~/Library/Preferences/com.googlecode.iterm2.plist
 spotify:
   - ~/Library/Preferences/com.spotify.client.plist
   - ~/Library/Preferences/com.spotify.client.helper.plist
+sublimetext:
+  - ~/Library/Preferences/com.sublimetext.3.plist
 telegram:
   - ~/Library/Preferences/org.telegram.desktop.plist
