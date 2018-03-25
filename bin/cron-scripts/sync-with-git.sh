@@ -27,7 +27,7 @@ fi
 
 # Backup configuration
 rm -rf ./preferences
-touch .preferences/.gitignore
+touch preferences/.gitignore
 ~/bin/mac-configuration/preferences/backup-preferences.rb -l preferences
 if [ ! -z "$(git diff preferences)" ]; then
     git commit --quiet --author "sync-with-git (robot) <sync-with-git@$(hostname)>" -m "[sync-with-git] Update application preferences" app-preferences
