@@ -1,0 +1,5 @@
+spotify:
+  - ~/Library/Preferences/com.spotify.client.plist
+  - ~/Library/Preferences/com.spotify.client.helper.plist
+telegram:
+  - ~/Library/Preferences/org.telegram.desktop.plist
