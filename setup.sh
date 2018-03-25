@@ -129,7 +129,6 @@ sudo systemsetup -setrestartfreeze on # restart on mac bsod
 # Terminal
 #
 
-# Set Fish as shell
 echo "Setting Fish as shell"
 sudo sh -c "grep -q -F fish /etc/shells || echo /usr/local/bin/fish >> /etc/shells"
 sudo chsh -s /usr/local/bin/fish $USER
@@ -144,14 +143,20 @@ if [ ! $IS_SETUP ]; then
 fi
 
 #
-# Setup auto-updates
+# Setup cron scripts
 #
+echo "Setting up cron scripts"
 
-mkdir -p ~/bin
-cp upgrade-brews.sh ~/bin
-sed -i '' "s/SECRETPASSWORD/$PASSWORD/g" ~/bin/upgrade-brews.sh
+# Copy and update scripts
+mkdir -p ~/bin/mac-configuration
+cp cron-scripts/* ~/bin/mac-configuration
+sed -i '' "s/SECRETPASSWORD/$PASSWORD/g" ~/bin/mac-configuration/upgrade-brews.sh # Set password in upgrade-brews
+
+# Setup crontab to run at 3:30am
 (crontab -l 2>/dev/null | grep -q MAILTO) || (echo 'MAILTO="rik@rikbrown.co.uk"'; crontab -l 2>/dev/null) | crontab - 
-(crontab -l 2>/dev/null | grep -q upgrade-brews) || (crontab -l 2>/dev/null; echo '30 3 * * * ~/bin/upgrade-brews.sh 2>/dev/null') | crontab -
+(crontab -l 2>/dev/null | grep -q run-cron-scripts) || (crontab -l 2>/dev/null; echo '30 3 * * * ~/bin/mac-configuration/run-cron-scripts.sh --sleep') | crontab -
+
+# Wake up to run it at 3:29am
 sudo pmset repeat wakeorpoweron MTWRFSU 03:29:00
 
 #
