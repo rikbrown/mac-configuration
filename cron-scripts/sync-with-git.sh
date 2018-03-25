@@ -8,7 +8,7 @@
 
 set -e # exit if anything fails
 
-TEMP_DIR="/tmp/sync-brewfile"
+TEMP_DIR="/tmp/sync-settings"
 
 # Create temporary directory
 [ -e ${TEMP_DIR} ] && rm -rf ${TEMP_DIR}
@@ -21,11 +21,17 @@ cd mac-configuration
 
 # Update bundle
 brew bundle dump --force
-
 if [ ! -z "$(git diff Brewfile)" ]; then
-    git commit --quiet --author "sync-brewfile (robot) <sync-brewfile@$(hostname)>" -m "[sync-brewfile] Update Brewfile" Brewfile
-    git push --quiet 2>&1
+    git commit --quiet --author "sync-with-git (robot) <sync-with-git@$(hostname)>" -m "[sync-with-git] Update Brewfile" Brewfile
 fi
+
+# Backup configuration
+app-preferences/backup-preferences.rb
+if [ ! -z "$(git diff app-preferences/preferences)" ]; then
+    git commit --quiet --author "sync-with-git (robot) <sync-with-git@$(hostname)>" -m "[sync-with-git] Update application preferences" app-preferences
+fi
+
+git push --quiet 2>&1
 
 popd >/dev/null
 rm -rf ${TEMP_DIR}

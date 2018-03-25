@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
-require_relative 'backup-config.rb'
+require_relative 'config-lib.rb'
 include BackupConfig
 
 #
-# backup-settings
+# preferences-settings
 #
 
-# Perform backup
+# Perform preferences
 targets.each do |source, target|
   puts "#{source} -> #{target}" if verbose?
   FileUtils.mkdir_p(File.dirname(target))

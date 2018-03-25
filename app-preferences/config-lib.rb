@@ -14,7 +14,7 @@ module BackupConfig
   # @return [Boolean] should we be verbose?
   def verbose?; OPTIONS[:verbose]; end
 
-  # Get backup targets (source to target)
+  # Get preferences targets (source to target)
   # @return [Hash<String, String>]
   def targets
     BackupUtils.config.flat_map do |app, files|
@@ -28,10 +28,10 @@ module BackupConfig
 
   class BackupUtils
     class << self
-      # Get backup location for input app and file
+      # Get preferences location for input app and file
       # @return [String]
       def backup_location(app, file)
-        File.join(__dir__, 'backup', app, File.basename(file))
+        File.join(__dir__, 'preferences', app, File.basename(file))
       end
 
       # @return [Hash<String, Array<String>>]

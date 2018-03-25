@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require_relative 'backup-config.rb'
+require_relative 'config-lib.rb'
 include BackupConfig
 
 #
