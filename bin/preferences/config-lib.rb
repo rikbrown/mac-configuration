@@ -7,8 +7,10 @@ module BackupConfig
 
   OPTIONS = {}.tap do |options|
     OptionParser.new do |opts|
-      opts.on("-v", "--[no-]verbose", "Run verbosely") { |v| options[:verbose] = v }
+      opts.on("-l", "--location LOCATION", "Location to backup/restore preferences") { |l| options[:location] = l }
+      opts.on("-v", "--verbose", "Run verbosely") { |v| options[:verbose] = v }
     end.parse!
+    raise OptionParser::MissingArgument if options[:location].nil?
   end
 
   # @return [Boolean] should we be verbose?
@@ -31,7 +33,7 @@ module BackupConfig
       # Get preferences location for input app and file
       # @return [String]
       def backup_location(app, file)
-        File.join(__dir__, 'preferences', app, File.basename(file))
+        File.join(OPTIONS[:location], app, File.basename(file))
       end
 
       # @return [Hash<String, Array<String>>]

@@ -26,8 +26,9 @@ if [ ! -z "$(git diff Brewfile)" ]; then
 fi
 
 # Backup configuration
-app-preferences/backup-preferences.rb
-if [ ! -z "$(git diff app-preferences/preferences)" ]; then
+rm -rf ./preferences
+~/bin/mac-configuration/preferences/backup-preferences.rb -l preferences
+if [ ! -z "$(git diff preferences)" ]; then
     git commit --quiet --author "sync-with-git (robot) <sync-with-git@$(hostname)>" -m "[sync-with-git] Update application preferences" app-preferences
 fi
 
