@@ -30,6 +30,7 @@ rm -rf ./preferences/*
 mkdir -p preferences
 touch preferences/.gitignore
 ~/bin/mac-configuration/preferences/backup-preferences.rb -l preferences
+git add -N preferences # mark intent to add preferences (so diff works)
 if [ ! -z "$(git diff preferences)" ]; then
     git commit --quiet --author "sync-with-git (robot) <sync-with-git@$(hostname)>" -m "[sync-with-git] Update application preferences" app-preferences
 fi
