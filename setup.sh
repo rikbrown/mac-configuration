@@ -30,7 +30,6 @@ echo "Setting up Homebrew"
 # Install brews
 echo "Unbundling brews!"
 brew bundle
-
 #
 # Config
 #
