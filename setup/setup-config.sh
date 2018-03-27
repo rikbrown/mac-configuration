@@ -2,6 +2,13 @@
 alias dw="defaults write"
 alias dwg="defaults write -g"
 
+#
+# Defaults
+#
+
+# Close any open System Preferences panes
+osascript -e 'tell application "System Preferences" to quit'
+
 # Keyboard
 dwg NSAutomaticQuoteSubstitutionEnabled -bool false
 dwg NSAutomaticDashSubstitutionEnabled -bool false
@@ -83,3 +90,18 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 dw com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 dw com.apple.LaunchServices LSQuarantine -bool false # Disable the “Are you sure you want to open this application?” dialog
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName # Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
+
+#
+# Power management
+#
+
+sudo pmset autorestart 1
+sudo systemsetup -setrestartfreeze on # restart on mac bsod
+
+#
+# Terminal
+#
+
+echo "Setting Fish as shell"
+sudo sh -c "grep -q -F fish /etc/shells || echo /usr/local/bin/fish >> /etc/shells"
+sudo chsh -s /usr/local/bin/fish $USER

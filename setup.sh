@@ -6,9 +6,6 @@ USER=$(whoami)
 # Initial prep
 #
 
-# Close any open System Preferences panes
-osascript -e 'tell application "System Preferences" to quit'
-
 # Get password. We'll use it later for the update script
 echo "Please enter your password:"
 read -s PASSWORD
@@ -39,23 +36,11 @@ brew bundle
 # Config
 #
 echo "Configuring system"
-setup/setup-defaults.sh
+setup/setup-config.sh
 
 # Git
 git config --global author.name "Rik Brown"
 git config --global author.email "rik@rik.codes"
-
-# Power management
-sudo pmset autorestart 1
-sudo systemsetup -setrestartfreeze on # restart on mac bsod
-
-#
-# Terminal
-#
-
-echo "Setting Fish as shell"
-sudo sh -c "grep -q -F fish /etc/shells || echo /usr/local/bin/fish >> /etc/shells"
-sudo chsh -s /usr/local/bin/fish $USER
 
 #
 # Dock
