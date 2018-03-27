@@ -105,5 +105,5 @@ echo "Setting Fish as shell"
 sudo sh -c "grep -q -F fish /etc/shells || echo /usr/local/bin/fish >> /etc/shells"
 sudo chsh -s /usr/local/bin/fish $USER
 curl -L https://get.oh-my.fish > /tmp/omf-install
-fish /tmp/omf-install --noninteractive
+fish /tmp/omf-install --noninteractive || true
 
