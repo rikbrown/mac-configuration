@@ -20,6 +20,12 @@ sudo -S -v <<< "$PASSWORD" 2>/dev/null
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 #
+# Restore app settings
+#
+echo "Restoring preferences"
+bin/preferences/restore-preferences.rb -l preferences/
+
+#
 # Apps
 #
 
@@ -113,8 +119,8 @@ dw com.apple.TextEdit RichText -int 0 # default to plain text
 dw com.googlecode.iterm2 PromptOnQuit -bool false # no prompt on quit
 
 # Disable guest user
-sudo dw /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
-sudo dw /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
+sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
 
 # Misc
 dw com.apple.print.PrintingPrefs "Quit When Finished" -bool true
