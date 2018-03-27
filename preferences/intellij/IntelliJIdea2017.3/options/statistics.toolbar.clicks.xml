@@ -1,0 +1,9 @@
+<application>
+  <component name="ToolbarClicksCollector">
+    <counts>
+      <entry action="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction@NavBarToolbar" count="3" />
+      <entry action="com.intellij.ui.AnActionButton$AnActionButtonWrapper@ToolbarDecorator" count="10" />
+      <entry action="org.jetbrains.plugins.ruby.gem.ui.ShowGemPathActionButton@ToolbarDecorator" count="1" />
+    </counts>
+  </component>
+</application>

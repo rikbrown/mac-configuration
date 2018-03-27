@@ -1,0 +1,27 @@
+<application>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="9" />
+      <entry feature="execute.GroovyScriptRunConfiguration.Run" count="2" />
+      <entry feature="ide.help.login_to_github" count="1" />
+      <entry feature="ide.settings.Appearance" count="1" />
+      <entry feature="ide.settings.Code Style" count="3" />
+      <entry feature="ide.settings.Color Scheme" count="5" />
+      <entry feature="ide.settings.Font" count="7" />
+      <entry feature="ide.settings.GitHub" count="3" />
+      <entry feature="ide.settings.Java" count="2" />
+      <entry feature="ide.settings.Plugins" count="3" />
+      <entry feature="ide.settings.Python" count="1" />
+      <entry feature="ide.settings.Ruby" count="6" />
+      <entry feature="ide.settings.Smart Keys" count="1" />
+      <entry feature="ide.settings.System Settings" count="3" />
+      <entry feature="ideaapp.started" count="21" />
+      <entry feature="welcome.screen.ConfigureIcs" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="9" />
+      <entry feature="welcome.screen.WelcomeScreen.CreateNewProject" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.GetFromVcs" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.ImportProject" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.Settings" count="3" />
+    </counts>
+  </component>
+</application>

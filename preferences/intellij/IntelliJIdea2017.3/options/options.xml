@@ -1,0 +1,29 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="Default.savedEditorTheme" value="_@user_Default" />
+    <property name="evlsprt3.173" value="17" />
+    <property name="installed.kotlin.plugin.version" value="1.2.30-release-IJ2017.3-1" />
+    <property name="android-component-compatibility-check" value="1521520523871" />
+    <property name="project.wizard.group" value="RUBY_MODULE" />
+    <property name="project.wizard.template" value="Java" />
+    <property name="create.project.preferred.importer" value="Existing Sources" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="ts.lib.d.ts.version" value="2.6.2" />
+    <property name="PLUGIN_FILTER" value="rainglow&#10;python&#10;ruby&#10;pytho&#10;gradle" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="last.used.gradle.home" value="/usr/local/Cellar/gradle/4.6/libexec" />
+    <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="kotlin.lastUpdateCheck" value="1521522505983" />
+    <property name="jdk.selected.JAVA_MODULE" value="10" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
+    <property name="file.gist.reindex.count" value="2323" />
+    <property name="SearchEveryWhereHistory" value="" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6280488" />
+    <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
+    <property name="settings.code.style.selected.tab.Python" value="Wrapping and Braces" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Ruby SDK and Gems" />
+    <property name="selected.color.option.type" value="STATIC_FIELD_ATTRIBUTES" />
+    <property name="ColorChooser.RecentColors" value="255-255-255-255,,,169-183-198-255" />
+    <property name="KEYMAP" value="" />
+  </component>
+</application>

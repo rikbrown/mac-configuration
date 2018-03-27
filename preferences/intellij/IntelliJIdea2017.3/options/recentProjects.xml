@@ -1,0 +1,56 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/RikMacConfiguration" />
+        <option value="$USER_HOME$/RikMacConfiguration/app-settings" />
+        <option value="$USER_HOME$/Code/kotlin-bits" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/RikMacConfiguration" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/RikMacConfiguration" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Code/kotlin-bits">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521951941283" />
+              <option name="buildTimestamp" value="1520275895424" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/RikMacConfiguration">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1522120106752" />
+              <option name="buildTimestamp" value="1520275872281" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/RikMacConfiguration/app-settings">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-173.4674.33" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1521951980617" />
+              <option name="buildTimestamp" value="1520275913146" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/RikMacConfiguration" />
+  </component>
+</application>

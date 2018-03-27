@@ -1,0 +1,80 @@
+<application>
+  <component name="ActionsCollector">
+    <counts>
+      <entry action="$Delete" count="9" />
+      <entry action="$Redo" count="35" />
+      <entry action="$SelectAll" count="10" />
+      <entry action="$Undo" count="252" />
+      <entry action="AddFrameworkSupport" count="4" />
+      <entry action="Back" count="2" />
+      <entry action="Bash" count="3" />
+      <entry action="Bash.NewBashScript" count="1" />
+      <entry action="CheckinFiles" count="3" />
+      <entry action="CompileDirty" count="1" />
+      <entry action="Convert concatenation to template" count="1" />
+      <entry action="Create function  relative " count="1" />
+      <entry action="CreateRunConfiguration" count="1" />
+      <entry action="EditorBackSpace" count="1683" />
+      <entry action="EditorChooseLookupItem" count="12" />
+      <entry action="EditorChooseLookupItemReplace" count="3" />
+      <entry action="EditorCopy" count="95" />
+      <entry action="EditorCut" count="43" />
+      <entry action="EditorDelete" count="53" />
+      <entry action="EditorDown" count="370" />
+      <entry action="EditorDownWithSelection" count="18" />
+      <entry action="EditorEnter" count="368" />
+      <entry action="EditorEscape" count="17" />
+      <entry action="EditorIndentSelection" count="5" />
+      <entry action="EditorLeft" count="317" />
+      <entry action="EditorLeftWithSelection" count="30" />
+      <entry action="EditorLineEnd" count="145" />
+      <entry action="EditorLineEndWithSelection" count="17" />
+      <entry action="EditorLineStart" count="64" />
+      <entry action="EditorLineStartWithSelection" count="139" />
+      <entry action="EditorNextWord" count="13" />
+      <entry action="EditorNextWordWithSelection" count="18" />
+      <entry action="EditorPaste" count="172" />
+      <entry action="EditorPreviousWord" count="25" />
+      <entry action="EditorPreviousWordWithSelection" count="3" />
+      <entry action="EditorRight" count="167" />
+      <entry action="EditorRightWithSelection" count="17" />
+      <entry action="EditorTab" count="29" />
+      <entry action="EditorUnSelectWord" count="1" />
+      <entry action="EditorUnindentSelection" count="23" />
+      <entry action="EditorUp" count="366" />
+      <entry action="EditorUpWithSelection" count="57" />
+      <entry action="Find" count="5" />
+      <entry action="Forward" count="1" />
+      <entry action="Git.Configure.Remotes" count="1" />
+      <entry action="GotoDeclaration" count="16" />
+      <entry action="Ics.Overwrite Local" count="1" />
+      <entry action="Ics.Overwrite Remote" count="2" />
+      <entry action="Import" count="3" />
+      <entry action="Install package PyYAML" count="1" />
+      <entry action="Kotlin.NewFile" count="10" />
+      <entry action="MakeModule" count="1" />
+      <entry action="MoveLineDown" count="1" />
+      <entry action="MoveLineUp" count="1" />
+      <entry action="NewDir" count="13" />
+      <entry action="NewElement" count="1" />
+      <entry action="NewFile" count="10" />
+      <entry action="NewProject" count="1" />
+      <entry action="NewPythonFile" count="1" />
+      <entry action="OpenFile" count="1" />
+      <entry action="Reformat file" count="3" />
+      <entry action="RenameElement" count="13" />
+      <entry action="RunClass" count="2" />
+      <entry action="SaveAll" count="316" />
+      <entry action="SearchEverywhere" count="2" />
+      <entry action="ShowIntentionActions" count="28" />
+      <entry action="ShowNavBar" count="1" />
+      <entry action="ShowProjectStructureSettings" count="6" />
+      <entry action="SplitVertically" count="3" />
+      <entry action="Suppress for method" count="1" />
+      <entry action="Suppress for statement" count="2" />
+      <entry action="Typo_ Change to..." count="1" />
+      <entry action="Typo_ Save  brewfile  to dictionary" count="1" />
+      <entry action="Vcs.Push" count="1" />
+    </counts>
+  </component>
+</application>
