@@ -46,6 +46,8 @@ git config --global author.email "rik@rik.codes"
 # Dock
 #
 
+dark-mode off; dark-mode on
+
 if [ ! $IS_SETUP ]; then
 	# New setup - wipe dock
 	defaults write com.apple.dock persistent-apps -array

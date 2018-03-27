@@ -48,7 +48,6 @@ chflags nohidden ~/Library # show ~/Library
 # Dock and desktop
 dw com.apple.finder CreateDesktop false; # no desktop icons
 dw com.apple.dock tilesize -int 32
-dark-mode off; dark-mode on
 
 # Mission Control
 dw com.apple.dock mru-spaces -bool false # don't automatically rearrange spaces
@@ -105,3 +104,5 @@ sudo systemsetup -setrestartfreeze on # restart on mac bsod
 echo "Setting Fish as shell"
 sudo sh -c "grep -q -F fish /etc/shells || echo /usr/local/bin/fish >> /etc/shells"
 sudo chsh -s /usr/local/bin/fish $USER
+curl -L https://get.oh-my.fish | fish
+
