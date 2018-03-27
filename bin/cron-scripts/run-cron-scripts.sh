@@ -1,4 +1,5 @@
 #!/bin/sh
+export PATH="/usr/local/bin/:$PATH"
 
 ~/bin/mac-configuration/cron-scripts/upgrade-brews.sh
 ~/bin/mac-configuration/cron-scripts/sync-with-git.sh

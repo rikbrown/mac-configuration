@@ -30,6 +30,7 @@ echo "Setting up Homebrew"
 # Install brews
 echo "Unbundling brews!"
 brew bundle
+
 #
 # Config
 #
@@ -111,6 +112,10 @@ dw com.apple.TextEdit RichText -int 0 # default to plain text
 # iTerm
 dw com.googlecode.iterm2 PromptOnQuit -bool false # no prompt on quit
 
+# Disable guest user
+sudo dw /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
+sudo dw /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
+
 # Misc
 dw com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 dw com.apple.LaunchServices LSQuarantine -bool false # Disable the “Are you sure you want to open this application?” dialog
@@ -148,6 +153,7 @@ echo "Setting up cron scripts"
 
 # Copy and update scripts
 mkdir -p ~/bin/mac-configuration
+chmod 700 ~/bin
 cp -r bin/* ~/bin/mac-configuration
 sed -i '' "s/SECRETPASSWORD/$PASSWORD/g" ~/bin/mac-configuration/cron-scripts/upgrade-brews.sh # Set password in upgrade-brews
 
