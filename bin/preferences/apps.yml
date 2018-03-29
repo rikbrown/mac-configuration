@@ -2,6 +2,12 @@ intellij:
   - ~/Library/Preferences/IntelliJIdea2017.3
 iterm2:
   - ~/Library/Preferences/com.googlecode.iterm2.plist
+office:
+  - ~/Library/Preferences/com.microsoft.autoupdate.fba.plist
+  - ~/Library/Preferences/com.microsoft.autoupdate2.plist
+  - ~/Library/Preferences/com.microsoft.Word.plist
+  - ~/Library/Preferences/com.microsoft.Powerpoint.plist
+  - ~/Library/Preferences/com.microsoft.Excel.plist
 spotify:
   - ~/Library/Preferences/com.spotify.client.plist
   - ~/Library/Preferences/com.spotify.client.helper.plist

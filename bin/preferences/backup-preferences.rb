@@ -10,5 +10,8 @@ include BackupConfig
 targets.each do |source, target|
   puts "#{source} -> #{target}" if verbose?
   FileUtils.mkdir_p(File.dirname(target))
-  FileUtils.cp_r(sanitise_path(source), target)
+
+  FileUtils.rmtree(target)
+  source = sanitise_path(source)
+  FileUtils.cp_r(source, target) if File.exist? source
 end
