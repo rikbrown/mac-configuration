@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'find'
 require 'yaml'
 require 'optparse'
 
@@ -19,7 +20,26 @@ module BackupConfig
   # Get preferences targets (source to target)
   # @return [Hash<String, String>]
   def targets
-    BackupUtils.config.flat_map do |app, files|
+    BackupUtils.config.flat_map do |app, config|
+      files = case config
+                when Array then config
+                when Hash then
+                  # @type [Array<String>]
+                  excluded_files = config['exclude'].flat_map do |loc|
+                    Find.find(sanitise_path(loc))
+                        .reject {|fn| File.directory?(fn) }
+                  end
+
+                  config['include']
+                    .flat_map do |loc|
+                      Find.find(sanitise_path(loc))
+                        .reject { |fn| File.directory?(fn) }
+                        .reject { |fn| excluded_files.include? fn }
+                        .collect { |_| _ }
+                    end
+                else raise "Invalid config: #{config}"
+              end
+
       files.map { |file| [file, BackupUtils.backup_location(app, file)] }
     end.to_h
   end

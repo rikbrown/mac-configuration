@@ -77,6 +77,11 @@
             <summary>This sdbm is bundled with Ruby</summary>
           </additional_info>
         </gem>
+        <gem url="file:///usr/local/lib/ruby/gems/2.5.0/gems/method_source-0.9.0" name="method_source" version="0.8.1" timestamp="1522296991701" parser_version="15" git="false">
+          <additional_info authors="John Mair (banisterfiend)" email="jrmair@gmail.com" homepage="http://banisterfiend.wordpress.com">
+            <summary>retrieve the sourcecode for a method</summary>
+          </additional_info>
+        </gem>
         <gem url="file:///usr/local/lib/ruby/2.5.0/fiddle" name="fiddle" version="1.0.0" timestamp="0" parser_version="15" git="false">
           <additional_info authors="N/A" email="N/A" homepage="N/A">
             <summary>This fiddle is bundled with Ruby</summary>

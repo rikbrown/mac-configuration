@@ -1,5 +1,13 @@
 intellij:
-  - ~/Library/Preferences/IntelliJIdea2017.3
+  include:
+    - ~/Library/Preferences/IntelliJIdea2017.3
+  exclude:
+    - ~/Library/Preferences/IntelliJIdea2017.3/idea.key
+    - ~/Library/Preferences/IntelliJIdea2017.3/settingsRepository
+    - ~/Library/Preferences/IntelliJIdea2017.3/tasks
+    - ~/Library/Preferences/IntelliJIdea2017.3/port
+    - ~/Library/Preferences/IntelliJIdea2017.3/port.lock
+    - ~/Library/Preferences/IntelliJIdea2017.3/options/recentProjects.xml
 iterm2:
   - ~/Library/Preferences/com.googlecode.iterm2.plist
 office:

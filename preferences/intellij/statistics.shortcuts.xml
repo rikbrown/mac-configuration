@@ -1,0 +1,47 @@
+<application>
+  <component name="ShortcutsCollector">
+    <counts>
+      <entry shortcut="Alt+Down" count="1" />
+      <entry shortcut="Alt+Enter" count="29" />
+      <entry shortcut="Alt+Left" count="25" />
+      <entry shortcut="Alt+Right" count="13" />
+      <entry shortcut="Alt+Shift+Down" count="1" />
+      <entry shortcut="Alt+Shift+Left" count="3" />
+      <entry shortcut="Alt+Shift+Right" count="18" />
+      <entry shortcut="Alt+Shift+Up" count="1" />
+      <entry shortcut="Backspace" count="1896" />
+      <entry shortcut="Delete" count="65" />
+      <entry shortcut="Down" count="434" />
+      <entry shortcut="End" count="1" />
+      <entry shortcut="Enter" count="446" />
+      <entry shortcut="Escape" count="32" />
+      <entry shortcut="Home" count="4" />
+      <entry shortcut="Left" count="367" />
+      <entry shortcut="Meta+A" count="10" />
+      <entry shortcut="Meta+C" count="106" />
+      <entry shortcut="Meta+F" count="6" />
+      <entry shortcut="Meta+Left" count="70" />
+      <entry shortcut="Meta+N" count="1" />
+      <entry shortcut="Meta+Right" count="171" />
+      <entry shortcut="Meta+S" count="346" />
+      <entry shortcut="Meta+Shift+Left" count="155" />
+      <entry shortcut="Meta+Shift+Right" count="20" />
+      <entry shortcut="Meta+Shift+Z" count="35" />
+      <entry shortcut="Meta+Up" count="1" />
+      <entry shortcut="Meta+V" count="194" />
+      <entry shortcut="Meta+W" count="32" />
+      <entry shortcut="Meta+X" count="47" />
+      <entry shortcut="Meta+Z" count="265" />
+      <entry shortcut="Right" count="198" />
+      <entry shortcut="Shift+Backspace" count="10" />
+      <entry shortcut="Shift+Down" count="18" />
+      <entry shortcut="Shift+Left" count="31" />
+      <entry shortcut="Shift+Right" count="17" />
+      <entry shortcut="Shift+Shift" count="3" />
+      <entry shortcut="Shift+Tab" count="31" />
+      <entry shortcut="Shift+Up" count="58" />
+      <entry shortcut="Tab" count="54" />
+      <entry shortcut="Up" count="460" />
+    </counts>
+  </component>
+</application>
