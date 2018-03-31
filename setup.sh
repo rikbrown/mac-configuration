@@ -22,9 +22,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 echo "Setting up Homebrew"
 [ ! -e /usr/local/bin/brew ] && /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install brews
-echo "Unbundling brews!"
+# Install brews/gems from bundles
+echo "Unbundling things!"
 brew bundle
+bundle install
 
 #
 # Restore app settings
