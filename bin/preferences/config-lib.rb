@@ -1,5 +1,4 @@
 require 'fileutils'
-require 'find'
 require 'yaml'
 require 'optparse'
 
@@ -26,16 +25,15 @@ module BackupConfig
                 when Hash then
                   # @type [Array<String>]
                   excluded_files = config['exclude'].flat_map do |loc|
-                    Find.find(sanitise_path(loc))
+                    Dir.glob(sanitise_path(loc))
                         .reject {|fn| File.directory?(fn) }
                   end
 
                   config['include']
                     .flat_map do |loc|
-                      Find.find(sanitise_path(loc))
+                      Dir.glob(sanitise_path(loc))
                         .reject { |fn| File.directory?(fn) }
                         .reject { |fn| excluded_files.include? fn }
-                        .collect { |_| _ }
                     end
                 else raise "Invalid config: #{config}"
               end

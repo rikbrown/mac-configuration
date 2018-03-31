@@ -2,9 +2,10 @@ amphetimine:
   - ~/Library/Containers/com.if.Amphetamine/Data/Library/Preferences/com.if.Amphetamine.plist
 intellij:
   include:
-    - ~/Library/Preferences/IntelliJIdea2017.3/options
+    - ~/Library/Preferences/IntelliJIdea2017.3/options/*
   exclude:
     - ~/Library/Preferences/IntelliJIdea2017.3/options/recentProjects.xml
+    - ~/Library/Preferences/IntelliJIdea2017.3/options/*statistics*
 iterm2:
   - ~/Library/Preferences/com.googlecode.iterm2.plist
 office:
