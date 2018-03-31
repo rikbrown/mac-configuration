@@ -1,3 +1,5 @@
+amphetimine:
+  - ~/Library/Containers/com.if.Amphetamine/Data/Library/Preferences/com.if.Amphetamine.plist
 intellij:
   include:
     - ~/Library/Preferences/IntelliJIdea2017.3/options
