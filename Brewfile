@@ -24,14 +24,18 @@ cask "google-backup-and-sync"
 cask "google-chrome"
 cask "intellij-idea"
 cask "iterm2"
+cask "keka"
 cask "microsoft-office"
 cask "spotify"
 cask "sublime-text"
 cask "transmission"
+cask "virtualbox"
 cask "caskroom/drivers/logitech-options"
+cask "caskroom/drivers/sonos"
 cask "caskroom/fonts/font-roboto"
 cask "caskroom/fonts/font-roboto-mono"
 cask "caskroom/fonts/font-roboto-mono-for-powerline"
+mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "Boxy", id: 1053031090
 mas "Chatty", id: 981117463
