@@ -4,7 +4,7 @@
       <entry action="$Delete" count="9" />
       <entry action="$Redo" count="35" />
       <entry action="$SelectAll" count="10" />
-      <entry action="$Undo" count="265" />
+      <entry action="$Undo" count="267" />
       <entry action="Add  else  block" count="1" />
       <entry action="AddFrameworkSupport" count="4" />
       <entry action="Back" count="2" />
@@ -15,35 +15,35 @@
       <entry action="Convert concatenation to template" count="1" />
       <entry action="Create function  relative " count="1" />
       <entry action="CreateRunConfiguration" count="1" />
-      <entry action="EditorBackSpace" count="1898" />
+      <entry action="EditorBackSpace" count="1904" />
       <entry action="EditorChooseLookupItem" count="13" />
       <entry action="EditorChooseLookupItemReplace" count="4" />
-      <entry action="EditorCopy" count="106" />
-      <entry action="EditorCut" count="47" />
-      <entry action="EditorDelete" count="65" />
-      <entry action="EditorDown" count="434" />
-      <entry action="EditorDownWithSelection" count="18" />
-      <entry action="EditorEnter" count="430" />
+      <entry action="EditorCopy" count="109" />
+      <entry action="EditorCut" count="49" />
+      <entry action="EditorDelete" count="75" />
+      <entry action="EditorDown" count="451" />
+      <entry action="EditorDownWithSelection" count="21" />
+      <entry action="EditorEnter" count="435" />
       <entry action="EditorEscape" count="18" />
       <entry action="EditorIndentSelection" count="5" />
       <entry action="EditorLeft" count="367" />
-      <entry action="EditorLeftWithSelection" count="31" />
-      <entry action="EditorLineEnd" count="172" />
+      <entry action="EditorLeftWithSelection" count="32" />
+      <entry action="EditorLineEnd" count="174" />
       <entry action="EditorLineEndWithSelection" count="20" />
-      <entry action="EditorLineStart" count="74" />
-      <entry action="EditorLineStartWithSelection" count="155" />
+      <entry action="EditorLineStart" count="76" />
+      <entry action="EditorLineStartWithSelection" count="156" />
       <entry action="EditorNextWord" count="13" />
       <entry action="EditorNextWordWithSelection" count="18" />
-      <entry action="EditorPaste" count="194" />
+      <entry action="EditorPaste" count="198" />
       <entry action="EditorPreviousWord" count="25" />
       <entry action="EditorPreviousWordWithSelection" count="3" />
       <entry action="EditorRight" count="198" />
       <entry action="EditorRightWithSelection" count="17" />
-      <entry action="EditorTab" count="45" />
+      <entry action="EditorTab" count="46" />
       <entry action="EditorUnSelectWord" count="1" />
       <entry action="EditorUnindentSelection" count="31" />
-      <entry action="EditorUp" count="458" />
-      <entry action="EditorUpWithSelection" count="58" />
+      <entry action="EditorUp" count="476" />
+      <entry action="EditorUpWithSelection" count="66" />
       <entry action="Find" count="6" />
       <entry action="Forward" count="1" />
       <entry action="Git.Configure.Remotes" count="1" />
@@ -56,6 +56,7 @@
       <entry action="MakeModule" count="1" />
       <entry action="MoveLineDown" count="1" />
       <entry action="MoveLineUp" count="1" />
+      <entry action="MoveStatementUp" count="1" />
       <entry action="NewDir" count="13" />
       <entry action="NewElement" count="1" />
       <entry action="NewFile" count="10" />
@@ -65,7 +66,7 @@
       <entry action="Reformat file" count="3" />
       <entry action="RenameElement" count="13" />
       <entry action="RunClass" count="2" />
-      <entry action="SaveAll" count="346" />
+      <entry action="SaveAll" count="351" />
       <entry action="SearchEverywhere" count="3" />
       <entry action="ShowIntentionActions" count="29" />
       <entry action="ShowNavBar" count="1" />
