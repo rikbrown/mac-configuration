@@ -1,5 +1,7 @@
 amphetimine:
   - ~/Library/Containers/com.if.Amphetamine/Data/Library/Preferences/com.if.Amphetamine.plist
+bettersnaptool:
+  - ~/Library/Preferences/com.hegenberg.BetterSnapTool.plist
 intellij:
   include:
     - ~/Library/Preferences/IntelliJIdea2017.3/options/*
