@@ -15,12 +15,6 @@ sudo -S -v <<< "$PASSWORD" 2>/dev/null
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 #
-# Restore app settings
-#
-echo "Restoring preferences"
-bin/preferences/restore-preferences.rb -l preferences/
-
-#
 # Apps
 #
 
@@ -31,6 +25,12 @@ echo "Setting up Homebrew"
 # Install brews
 echo "Unbundling brews!"
 brew bundle
+
+#
+# Restore app settings
+#
+echo "Restoring preferences"
+bin/preferences/restore-preferences.rb -l preferences/
 
 #
 # Config
