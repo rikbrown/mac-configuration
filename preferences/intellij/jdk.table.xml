@@ -218,8 +218,6 @@
         </annotationsPath>
         <classPath>
           <root type="composite">
-            <root url="file:///usr/local/Cellar/python/3.6.4_4/Frameworks/Python.framework/Versions/3.6/lib/python3.6" type="simple" />
-            <root url="file:///usr/local/Cellar/python/3.6.4_4/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload" type="simple" />
             <root url="file:///usr/local/lib/python3.6/site-packages" type="simple" />
             <root url="file://$USER_HOME$/Library/Caches/IntelliJIdea2017.3/python_stubs/1437855905" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/python/helpers/python-skeletons" type="simple" />
@@ -260,8 +258,6 @@
             <root url="file:///usr/local/lib/ruby/vendor_ruby/2.5.0" type="simple" />
             <root url="file:///usr/local/lib/ruby/vendor_ruby/2.5.0/x86_64-darwin17" type="simple" />
             <root url="file:///usr/local/lib/ruby/vendor_ruby" type="simple" />
-            <root url="file:///usr/local/Cellar/ruby/2.5.0_2/lib/ruby/2.5.0" type="simple" />
-            <root url="file:///usr/local/Cellar/ruby/2.5.0_2/lib/ruby/2.5.0/x86_64-darwin17" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/ruby/rubystubs/rubystubs25" type="simple" />
           </root>
         </classPath>
@@ -277,8 +273,6 @@
             <root url="file:///usr/local/lib/ruby/vendor_ruby/2.5.0" type="simple" />
             <root url="file:///usr/local/lib/ruby/vendor_ruby/2.5.0/x86_64-darwin17" type="simple" />
             <root url="file:///usr/local/lib/ruby/vendor_ruby" type="simple" />
-            <root url="file:///usr/local/Cellar/ruby/2.5.0_2/lib/ruby/2.5.0" type="simple" />
-            <root url="file:///usr/local/Cellar/ruby/2.5.0_2/lib/ruby/2.5.0/x86_64-darwin17" type="simple" />
             <root url="file://$APPLICATION_PLUGINS_DIR$/ruby/rubystubs/rubystubs25" type="simple" />
           </root>
         </sourcePath>
