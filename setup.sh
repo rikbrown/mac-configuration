@@ -99,5 +99,5 @@ if [ ! $IS_SETUP ]; then
 	open /Applications/BetterSnapTool.app
 	open /Applications/Dropbox.app
 	open "/Applications/Backup and Sync.app"
-        open /Applications/Docker.app
+	open /Applications/Docker.app
 fi

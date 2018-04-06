@@ -91,6 +91,15 @@ dw com.apple.LaunchServices LSQuarantine -bool false # Disable the “Are you su
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName # Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window
 
 #
+# Prevent app relaunch on restart (https://apple.stackexchange.com/a/253609)
+#
+if test -n "$(find . -maxdepth 1 -name 'glob*' -print -quit)" then
+    sudo sh -c '> ~/Library/Preferences/ByHost/com.apple.loginwindow*'
+    sudo chown root ~/Library/Preferences/ByHost/com.apple.loginwindow*
+    sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*
+fi
+
+#
 # Power management
 #
 
