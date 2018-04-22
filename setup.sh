@@ -24,8 +24,11 @@ echo "Setting up Homebrew"
 
 # Install brews/gems from bundles
 echo "Unbundling things!"
-brew bundle
-bundle install
+brew bundle # homebrew
+bundle install # gems
+
+# Node modules
+npm install -g aws-sam-local
 
 #
 # Restore app settings
