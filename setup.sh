@@ -29,6 +29,7 @@ bundle install # gems
 
 # Node modules
 npm install -g aws-sam-local
+npm install -g serverless
 
 #
 # Restore app settings
