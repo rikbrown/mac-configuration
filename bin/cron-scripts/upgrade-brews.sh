@@ -9,7 +9,7 @@ brew upgrade
 brew cask upgrade
 
 # Some apps are marked as auto-update, but are tedious to autoupdate (IntelliJ makes you download a dmg, the horror!)
-brew cask upgrade intellij-idea iterm2 google-chrome
+brew cask upgrade intellij-idea iterm2
 
 brew cleanup -s
 brew cask cleanup
