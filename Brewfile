@@ -54,4 +54,3 @@ cask "sublime-text"
 cask "transmission"
 cask "virtualbox"
 cask "vlc"
-mas "installed apps found", id: No
