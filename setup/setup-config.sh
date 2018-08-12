@@ -65,7 +65,7 @@ dwg AppleTemperatureUnit -string "Celsius"
 dwg AppleMeasurementUnits -string "Centimeters"
 dwg AppleMetricUnits -bool true
 dwg AppleLocale -string "en_GB@currency=USD"
-dwg AppleLanguages -array "en_GB" "en_US"
+dwg AppleLanguages -array "en-GB" "en-US"
 
 # MAS
 dw com.apple.SoftwareUpdate AutomaticDownload -int 1
