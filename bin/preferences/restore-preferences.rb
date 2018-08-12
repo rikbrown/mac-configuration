@@ -8,6 +8,10 @@ include BackupConfig
 
 # Perform restore
 targets.each do |source, target|
-  puts "#{target} -> #{source}" if verbose?
-  FileUtils.cp_r(target, File.dirname(BackupConfig.sanitise_path(source)), remove_destination: true) if File.exist? source
+  sanitized_source = File.dirname(BackupConfig.sanitise_path(source))
+  puts "#{target} -> #{sanitized_source}" if verbose?
+  unless dry_run?
+    FileUtils.mkdir_p(File.dirname(sanitized_source))
+    FileUtils.cp_r(target, sanitized_source, remove_destination: true) if File.exist? target
+  end
 end

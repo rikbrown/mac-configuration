@@ -9,9 +9,12 @@ include BackupConfig
 # Perform preferences
 targets.each do |source, target|
   puts "#{source} -> #{target}" if verbose?
-  FileUtils.mkdir_p(File.dirname(target))
 
-  FileUtils.rmtree(target)
-  source = sanitise_path(source)
-  FileUtils.cp_r(source, target) if File.exist? source
+  unless dry_run?
+	  FileUtils.mkdir_p(File.dirname(target))
+
+	  FileUtils.rmtree(target)
+	  source = sanitise_path(source)
+	  FileUtils.cp_r(source, target) if File.exist? source
+  end
 end

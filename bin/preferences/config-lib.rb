@@ -9,12 +9,16 @@ module BackupConfig
     OptionParser.new do |opts|
       opts.on("-l", "--location LOCATION", "Location to backup/restore preferences") { |l| options[:location] = l }
       opts.on("-v", "--verbose", "Run verbosely") { |v| options[:verbose] = v }
+      opts.on("-d", "--dry-run", "Dry run") { |v| options[:dry_run] = v }
     end.parse!
     raise OptionParser::MissingArgument if options[:location].nil?
   end
 
   # @return [Boolean] should we be verbose?
   def verbose?; OPTIONS[:verbose]; end
+
+  # @return [Boolean] dry run?
+  def dry_run?; OPTIONS[:dry_run]; end
 
   # Get preferences targets (source to target)
   # @return [Hash<String, String>]
@@ -24,7 +28,7 @@ module BackupConfig
                 when Array then config
                 when Hash then
                   # @type [Array<String>]
-                  excluded_files = config['exclude'].flat_map do |loc|
+                  excluded_files = (config['exclude'] || []).flat_map do |loc|
                     Dir.glob(sanitise_path(loc))
                         .reject {|fn| File.directory?(fn) }
                   end
@@ -51,7 +55,8 @@ module BackupConfig
       # Get preferences location for input app and file
       # @return [String]
       def backup_location(app, file)
-        File.join(OPTIONS[:location], app, File.basename(file))
+        sanitized_file = file.sub('~', 'Home').sub(Dir.home, 'Home')
+        File.join(OPTIONS[:location], app, sanitized_file)
       end
 
       # @return [Hash<String, Array<String>>]
