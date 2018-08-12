@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>codes.rik.alfred.setsubwooferlevel</string>
+	<key>connections</key>
+	<dict>
+		<key>404AA1BB-3BA8-44B2-AE84-F23989B8D39C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>893CDF1B-8EFA-4E64-87EB-7BCE24CCA538</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Rik Brown</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Set Subwoofer Level</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>subw</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Set Subwoofer Level</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>404AA1BB-3BA8-44B2-AE84-F23989B8D39C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>activate application "Sonos"
+tell application "System Events" to tell process "Sonos"
+  
+  repeat until (exists window "Preferences")
+    click menu item "Preferences…" of menu "Sonos" of menu bar item "Sonos" of menu bar 1
+    delay 0.1
+  end repeat
+  
+  tell window "Preferences"
+    tell tab group 1
+      click radio button "Sub"
+      set value of slider 1 to {query}
+    end tell
+  end tell
+end tell
+quit application "Sonos"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>893CDF1B-8EFA-4E64-87EB-7BCE24CCA538</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>404AA1BB-3BA8-44B2-AE84-F23989B8D39C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>893CDF1B-8EFA-4E64-87EB-7BCE24CCA538</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>110</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>www.rik.codes</string>
+</dict>
+</plist>
