@@ -59,7 +59,7 @@ cask "virtualbox"
 cask "vlc"
 cask "wireshark"
 mas "Amphetamine", id: 937984704
-mas "App Cleaner", id: 1013897218
+mas "App Cleaner & Uninstaller", id: 1013897218
 mas "BetterSnapTool", id: 417375580
 mas "Boxy", id: 1053031090
 mas "Chatty", id: 981117463
