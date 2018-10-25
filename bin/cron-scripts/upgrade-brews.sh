@@ -12,4 +12,3 @@ brew cask upgrade
 brew cask upgrade intellij-idea iterm2 logitech-options
 
 brew cleanup -s
-brew cask cleanup
