@@ -29,7 +29,7 @@ brew "mkvtoolnix"
 brew "moreutils"
 brew "namebench"
 brew "node"
-brew "ruby"
+brew "ruby", link: true
 brew "sceptre"
 brew "ssh-copy-id"
 brew "telnet"
