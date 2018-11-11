@@ -27,6 +27,7 @@ brew "mas"
 brew "maven"
 brew "mkvtoolnix"
 brew "moreutils"
+brew "mosh"
 brew "namebench"
 brew "node"
 brew "ruby", link: true
