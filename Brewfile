@@ -34,6 +34,7 @@ brew "ruby", link: true
 brew "sceptre"
 brew "ssh-copy-id"
 brew "telnet"
+brew "terraform"
 brew "the_silver_searcher"
 brew "vim"
 brew "wget"
