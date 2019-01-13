@@ -4,7 +4,7 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 cask "java"
-brew "python"
+brew "python", link: false
 brew "awscli"
 brew "bison"
 brew "bison@2.7"
