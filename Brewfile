@@ -73,20 +73,3 @@ cask "typora"
 cask "virtualbox"
 cask "vlc"
 cask "wireshark"
-mas "", id: 1176895641
-mas "", id: 1278508951
-mas "", id: 497799835
-mas "", id: 409183694
-mas "", id: 408981434
-mas "", id: 1438609932
-mas "", id: 1053031090
-mas "", id: 937984704
-mas "", id: 946399090
-mas "", id: 409201541
-mas "", id: 1147396723
-mas "", id: 747648890
-mas "", id: 682658836
-mas "", id: 417375580
-mas "", id: 409203825
-mas "", id: 1013897218
-mas "", id: 981117463
