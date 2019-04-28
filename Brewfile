@@ -92,7 +92,6 @@ mas "com.hba.teslabar-mas", id: 1438609932
 mas "com.hegenberg.BetterSnapTool", id: 417375580
 mas "com.if.Amphetamine", id: 937984704
 mas "com.nektony.App-Cleaner", id: 1013897218
-mas "com.nektony.App-Cleaner", id: 1013897218
 mas "com.readdle.smartemail-Mac", id: 1176895641
 mas "desktop.WhatsApp", id: 1147396723
 mas "hu.panda.Chatty", id: 981117463
