@@ -76,6 +76,7 @@ cask "sonos"
 cask "spotify"
 cask "steam"
 cask "sublime-text"
+cask "telegram"
 cask "transmission"
 cask "typora"
 cask "virtualbox"
@@ -96,5 +97,3 @@ mas "com.nektony.App-Cleaner", id: 1013897218
 mas "com.readdle.smartemail-Mac", id: 1176895641
 mas "desktop.WhatsApp", id: 1147396723
 mas "hu.panda.Chatty", id: 981117463
-mas "org.telegram.desktop", id: 946399090
-mas "ru.keepcoder.Telegram", id: 747648890
