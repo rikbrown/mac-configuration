@@ -82,18 +82,3 @@ cask "typora"
 cask "virtualbox"
 cask "vlc"
 cask "wireshark"
-mas "com.apple.dt.Xcode", id: 497799835
-mas "com.apple.garageband10", id: 682658836
-mas "com.apple.iMovieApp", id: 408981434
-mas "com.apple.iWork.Keynote", id: 409183694
-mas "com.apple.iWork.Numbers", id: 409203825
-mas "com.apple.iWork.Pages", id: 409201541
-mas "com.atlassian.trello", id: 1278508951
-mas "com.francescodilorenzo.Mailbro", id: 1053031090
-mas "com.hba.teslabar-mas", id: 1438609932
-mas "com.hegenberg.BetterSnapTool", id: 417375580
-mas "com.if.Amphetamine", id: 937984704
-mas "com.nektony.App-Cleaner", id: 1013897218
-mas "com.readdle.smartemail-Mac", id: 1176895641
-mas "desktop.WhatsApp", id: 1147396723
-mas "hu.panda.Chatty", id: 981117463
