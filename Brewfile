@@ -82,3 +82,18 @@ cask "typora"
 cask "virtualbox"
 cask "vlc"
 cask "wireshark"
+mas "Amphetamine", id: 937984704
+mas "BetterSnapTool", id: 417375580
+mas "Boxy", id: 1053031090
+mas "Chatty", id: 981117463
+mas "Cleaner-App", id: 1013897218
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Spark", id: 1176895641
+mas "Trello", id: 1278508951
+mas "Valet for Tesla", id: 1438609932
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
