@@ -91,7 +91,6 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Spark", id: 1176895641
 mas "Trello", id: 1278508951
 mas "Valet for Tesla", id: 1438609932
 mas "WhatsApp", id: 1147396723
