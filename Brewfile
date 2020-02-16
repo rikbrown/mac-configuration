@@ -62,6 +62,7 @@ cask "handbrake"
 cask "intellij-idea-ce"
 cask "iterm2"
 cask "java"
+cask "karabiner-elements"
 cask "keka"
 cask "microsoft-office"
 cask "mumble"
@@ -70,14 +71,17 @@ cask "postman"
 cask "skype"
 cask "sonos"
 cask "spotify"
+cask "steam"
 cask "sublime-text"
 cask "switchresx"
 cask "telegram"
+cask "the-unarchiver"
 cask "transmission"
 cask "typora"
 cask "vlc"
 mas "BetterSnapTool", id: 417375580
 mas "GarageBand", id: 682658836
+mas "GFXBench Metal", id: 1044629456
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
