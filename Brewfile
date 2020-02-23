@@ -79,3 +79,11 @@ cask "the-unarchiver"
 cask "transmission"
 cask "typora"
 cask "vlc"
+mas "BetterSnapTool", id: 417375580
+mas "GarageBand", id: 682658836
+mas "GFXBench Metal", id: 1044629456
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Valet for Tesla", id: 1438609932
