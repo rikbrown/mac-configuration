@@ -80,6 +80,7 @@ cask "the-unarchiver"
 cask "transmission"
 cask "typora"
 cask "vlc"
+mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "GarageBand", id: 682658836
 mas "GFXBench Metal", id: 1044629456
