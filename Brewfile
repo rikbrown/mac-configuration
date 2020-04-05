@@ -79,7 +79,9 @@ cask "telegram"
 cask "the-unarchiver"
 cask "transmission"
 cask "typora"
+cask "visual-studio-code"
 cask "vlc"
+cask "webstorm"
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "GarageBand", id: 682658836
