@@ -38,7 +38,7 @@ brew "node"
 brew "ruby"
 brew "sceptre"
 brew "speedtest-cli"
-brew "ssh-copy-id"
+brew "ssh-copy-id", link: true
 brew "telnet"
 brew "terraform"
 brew "the_silver_searcher"
@@ -56,6 +56,7 @@ cask "docker"
 cask "font-roboto"
 cask "font-roboto-mono"
 cask "font-roboto-mono-for-powerline"
+cask "gimp"
 cask "goland"
 cask "google-backup-and-sync"
 cask "google-cloud-sdk"
@@ -85,6 +86,7 @@ cask "vlc"
 cask "webstorm"
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
+mas "Cleaner-App", id: 1013897218
 mas "GarageBand", id: 682658836
 mas "GFXBench Metal", id: 1044629456
 mas "iMovie", id: 408981434
