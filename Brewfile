@@ -28,7 +28,7 @@ brew "telnet"
 brew "vim"
 brew "webpack"
 brew "wget"
-brew "aws/tap/aws-sam-cli"
+brew "aws/tap/aws-sam-cli", link: false
 cask "adoptopenjdk"
 cask "aerial"
 cask "alfred"
