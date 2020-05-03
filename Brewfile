@@ -28,6 +28,7 @@ brew "telnet"
 brew "vim"
 brew "webpack"
 brew "wget"
+brew "wimlib"
 brew "aws/tap/aws-sam-cli", link: false
 cask "adoptopenjdk"
 cask "aerial"
@@ -55,6 +56,3 @@ cask "sublime-text"
 cask "telegram"
 cask "transmission"
 cask "webstorm"
-mas "Amphetamine", id: 937984704
-mas "BetterSnapTool", id: 417375580
-mas "Valet for Tesla", id: 1438609932
